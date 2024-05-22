@@ -71,7 +71,7 @@ func main() {
 		fmt.Println("Making request for timestamp:", timestampStr)
 
 		// Make the HTTP request
-		url := fmt.Sprintf("%s?datetime=%s", url, timestampStr)
+		url := fmt.Sprintf("%s?date_time=%s", url, timestampStr)
 		snapshotAt = time.Now()
 		resp, err := http.Get(url)
 		if err != nil {
